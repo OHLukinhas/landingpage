@@ -3,28 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
     <title>landing page</title>
+    <!--link do style.css e bootstrap (pagina responsiva)-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--fim do link do style.css e bootstrap (pagina responsiva)-->
 </head>
 
 <body>
     <div class="center">
+        <!--Titulo e mensagem -->
         <h1>LandingPage</h1>
         <p>Bem vindos ao menu de tarefas!!</p>
-        
+         <!--Titulo e mensagem -->
 
         <br />
         <table class="center">
-
+          <!--inicio Formulario de login-->
             <tbody>
-                
-                <tr>
-                    <p>Faça seu login abaixo</p>
-                    <td></td>
-                    <td><a href="">login</a></td>
-                    <td><a href="">cadastrar</a></td>
-                    <td><a href="">Recuperar senha</a></td>
-                </tr>
+                <div class="login-container">
+                    <form action="/script-de-autenticacao" method="post">
+                      <label for="username">Usuário:</label>
+                      <input type="text" id="username" name="username" required>
+                      
+                      <label for="password">Senha:</label>
+                      <input type="password" id="password" name="password" required>
+                      
+                      <input type="submit" value="Entrar">
+             <!--fim do formulario de login-->
 
             </tbody>
         </table>
