@@ -1,14 +1,17 @@
 body {
-    font-family: sans-serif
-    
+    font-family: 'Geneva';
+    font-style: normal;
   }
   /* inicio container de login*/
   .login-container {
     width: 300px;
     margin: 100px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 3px solid #240b06;
     border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal
   }
   input[type="text"], input[type="password"] {
     width: 100%;
@@ -27,7 +30,8 @@ body {
     border-radius: 3px;
   }
   input[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #0f696b;
+    transition: 1s;
   }
 .center {
     margin-left: auto;
@@ -40,7 +44,7 @@ body {
 }
 
 p, td, h1, input {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Geneva';
 }
 
 input {
@@ -56,3 +60,24 @@ table, td, th {
     border: 1px solid black;
 }
 
+.titulo{
+  border: 2px solid #240b06;
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+}
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+
+}

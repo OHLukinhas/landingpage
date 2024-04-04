@@ -52,19 +52,23 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
     <title>Pagina de Tarefas</title>
     <!--link do style.css e bootstrap (pagina responsiva)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--fim do link do style.css e bootstrap (pagina responsiva)-->
 </head>
 
 <body>
-
+    <!--Titulo e mensagem -->
+    <div class='titulo'>
+        <h1>LandingPage</h1>
+        <p>Bem vindos ao menu de tarefas!!</p>
+    </div>
     <!--Titulo e mensagem -->
     <div class="center">
-
-        <h1>MENU DE TAREFAS!</h1>
-
-
+        <br />
         <table class="center">
             <!--inicio Formulario de login-->
             <tbody>
