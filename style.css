@@ -40,7 +40,7 @@ body {
 }
 /*fim container login*/
 body {
-    background-image: url(/imagens/fundo-login.jpg);
+    background-image: url(imagens/fundo-login.jpg);
 }
 
 p, td, h1, input {
