@@ -34,7 +34,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
             header("Location: painel.php");
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
+            echo '<div class="alert alert-danger" role="alert" id="mensagem_erro">Falha ao logar, e-mail ou senha incorretos! </div>';
         }
         //fim da consulta da query
     }

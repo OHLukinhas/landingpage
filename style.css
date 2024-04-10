@@ -38,6 +38,19 @@ body {
     margin-right: auto;
     width: 350px;
 }
+/*mensagem de erro ao logar o usuario e senha incorretos*/
+#mensagem_erro {
+  background-color: rgba(252, 7, 7, 0.568); /* Fundo semi-transparente */
+  color: white; /* Cor do texto */
+  position: fixed; /* Posição fixa na tela */
+  bottom: 0; /* Alinhamento inferior */
+  left: 50%; /*horizontal */
+  transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
+  padding: 10px; /* Espaçamento interno */
+  width: 300px; /* Largura do alerta */
+  text-align: center; /* Centraliza o texto */
+}
+
 /*fim container login*/
 body {
     background-image: url(imagens/fundo-login.jpg);
