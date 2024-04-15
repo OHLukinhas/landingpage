@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15/04/2024 às 16:36
+-- Tempo de geração: 15/04/2024 às 16:40
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -41,7 +41,8 @@ CREATE TABLE `usuario` (
 INSERT INTO `usuario` (`id`, `nome`, `email`, `senha`) VALUES
 (1, 'alison', 'alison@alison.com', 'alison123'),
 (2, 'Lucas', 'lucas@lucas.com', 'lucas123'),
-(3, 'Joao', 'joao@joao.com', 'joao123');
+(3, 'Joao', 'joao@joao.com', 'joao123'),
+(4, 'André', 'andre@andre.com', 'andre123');
 
 --
 -- Índices para tabelas despejadas
@@ -61,7 +62,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
