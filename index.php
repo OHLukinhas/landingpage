@@ -32,7 +32,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['id'] = $usuario['id']; //variavel session fica valida por um certo tempo//
             $_SESSION['nome'] = $usuario['nome'];
 
-            header("Location: painel.php");
+            header("Location: painel.html");
         } else {
             echo '<div class="alert alert-danger" role="alert" id="mensagem_erro">Falha ao logar, e-mail ou senha incorretos! </div>';
         }
