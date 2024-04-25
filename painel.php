@@ -38,12 +38,9 @@ include('protect.php');
         </div>
         <div id="content-itens">
             <ol id="itens">
-                <li>Teste</li>
-                <li>Teste</li>
-                <li>Teste</li>
-                <li>Teste 1</li>
             </ol>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
