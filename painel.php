@@ -8,10 +8,15 @@ include('protect.php');
 
 <head>
     <meta charset="utf-8">
+    <title>Menu de tarefas</title>
     <!--link do bootstrap (pagina responsiva)-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--fim do link bootstrap (pagina responsiva)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fim do link bootstrap (pagina responsiva)-->
     <link rel="stylesheet" href="style-painel.css">
     <!--link da fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +27,20 @@ include('protect.php');
 
 
 <body>
-    Bem vindo ao Painel de tarefas! <?php echo $_SESSION['nome']; ?>
+    <!-- navbar do painel -->
+    <nav class="navbar bg-dark fixed-top bg-body-tertiary " data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bem vindo ao Painel de tarefas!</a>
+            <button type="button" class="btn btn-danger">
+                <a href="logout.php" class="back">Sair</a>
+            </button>
 
-    <p>
-        <a href="logout.php">Sair</a>
-    </p>
+        </div>
+    </nav>
+
+    <!-- fim da navbar do painel -->
+
+    <?php echo $_SESSION['nome']; ?>
     
     <div id="container">
         <h1 id="titulo">Suas Tasks</h1>
