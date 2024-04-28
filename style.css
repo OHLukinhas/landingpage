@@ -76,15 +76,6 @@ table, td, th {
     border: 1px solid black;
 }
 
-.titulo{
-  border: 2px solid #240b06;
-  width: 300px;
-  height: auto;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-}
 h1{
   font-family: "Poppins", sans-serif;
   font-weight: 500;

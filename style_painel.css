@@ -7,9 +7,11 @@
 
 
 }
+
+
 body{
     font-family: 'Poppins';
-    background-image: url(imagens/fundo-login.jpg);
+    background-image: url(imagens/fundobranco.png);
     background-repeat: no-repeat;
     background-size: auto;
     display: flex;
