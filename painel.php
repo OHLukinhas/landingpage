@@ -36,15 +36,15 @@ include('protect.php');
 
 
 <body>
-
     <!-- navbar do painel -->
     <nav class="navbar bg-dark fixed-top bg-body-tertiary " data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Bem vindo ao Painel de tarefas!</a>
-            <button type="button" class="btn btn-danger">
-                <a href="logout.php">Sair</a>
-            </button>
-
+            <div>
+                <a href="index.php">
+                    <button type="button" class="btn btn-danger">Sair</button>
+                </a>
+            </div>
         </div>
     </nav>
 
