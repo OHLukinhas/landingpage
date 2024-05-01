@@ -51,24 +51,89 @@ include('protect.php');
     <!-- fim da navbar do painel -->
 
     <?php echo $_SESSION['nome']; ?>
+    <!--inicio de formulario tarefas-->
 
-    <div id="container">
-        <h1 id="titulo">Suas Tasks</h1>
-        <div id="new-item">
-            <input type="text" id="add-new-item" placeholder="Digite sua nova task">
-            <button onclick="newTask()" id="btn-new-item" title="Clique aqui para adicionar uma nova task">
-                +
-            </button>
-        </div>
-        <div id="content-itens">
-            <ol id="itens">
-                <li>Teste</li>
-                <li>Teste</li>
-                <li>Teste</li>
-                <li>Teste 1</li>
-            </ol>
-        </div>
-    </div>
-</body>
+    <title>Formulário de Texto</title>
+    </head>
+
+    <body>
+
+        <!--inicio de formulario tarefas-->
+        <div id="container">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Nova tarefa
+                        </div>
+                    </div>
+                </div>
+                <!--inicio do container de titulo e descrição-->
+                <div id="caixa-formulario" class="container">
+                    <div class="mb-2">
+                        <label class="form-label">Titulo</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div>
+                        <label class="form-label">Descrição</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                        <div id="botao-salvar">
+                            <button onclick="newTask()" type="button" class="btn btn-outline-success" title="Clique aqui para adicionar uma nova tarefa">Salvar</button>
+                        </div>
+                    </div>
+                    <!--fim do container de titulo e descrição-->
+
+                    <!--inicio tarefas registradas-->
+                    <div id="container" class="container">
+                        <!--inicio colunas-->
+
+                        <div class="container-fluid">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">N</th>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Descrição</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <div>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Teste</td>
+                                                <td>Teste</td>
+                                                <td>30/04/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Teste</td>
+                                                <td>Teste</td>
+                                                <td>01/05/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Teste</td>
+                                                <td>Teste</td>
+                                                <td>01/05/2024</td>
+                                            </tr>
+                                        </div>
+                                    </tbody>
+                                </table>
+
+                            </table>
+                            <div>
+                                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                            <!--fim colunas-->
+
+                            <!--fim tarefas registradas-->
+                        </div>
+                    </div>
+    </body>
 
 </html>
