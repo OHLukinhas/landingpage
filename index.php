@@ -34,7 +34,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
             header("Location: painel.php");
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
+            echo '<div class="alert alert-danger" role="alert" id="mensagem_erro">Falha ao logar, e-mail ou senha incorretos! </div>';
         }
         //fim da consulta da query
     }
@@ -61,32 +61,23 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 </head>
 
 <body>
-    <!--Titulo e mensagem -->
-    <div class='titulo'>
-        <h1>LandingPage</h1>
-        <p>Bem vindos ao menu de tarefas!!</p>
-    </div>
-    <!--Titulo e mensagem -->
-    <div class="center">
-        <br />
-        <table class="center">
-            <!--inicio Formulario de login-->
-            <tbody>
+    <!--Titulo -->
+    <h1 class="center">Menu de tarefas</h1>
+    <!--inicio Formulario de login-->
+    <tbody>
 
-                <div class="login-container">
-                    <h1>Acesse sua conta</h1>
-                    <form action="" method="post">
-                        <label for="username">Email:</label>
-                        <input type="text" id="username" name="email" required>
+        <div class="login-container">
+            <h1>Acesse sua conta</h1>
+            <form action="" method="post">
+                <input type="text" id="username" name="email" required placeholder="E-mail" class="form-control">
 
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" name="senha" required>
+                <input type="password" id="password" name="senha" required placeholder="Senha" class="form-control">
 
-                        <input type="submit" value="Entrar">
-                        <!--fim do formulario de login-->
+                <input type="submit" value="Entrar">
+                <!--fim do formulario de login-->
 
-            </tbody>
-        </table>
+    </tbody>
+    </table>
     </div>
 
 </body>

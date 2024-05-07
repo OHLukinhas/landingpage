@@ -11,7 +11,10 @@ body {
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal
+    font-style: normal;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(16,120,129,1) 45%, rgba(253,187,45,1) 91%);
+
   }
   input[type="text"], input[type="password"] {
     width: 100%;
@@ -30,7 +33,7 @@ body {
     border-radius: 3px;
   }
   input[type="submit"]:hover {
-    background-color: #0f696b;
+    background-color: #084647;
     transition: 1s;
   }
 .center {
@@ -38,9 +41,22 @@ body {
     margin-right: auto;
     width: 350px;
 }
+/*mensagem de erro ao logar o usuario e senha incorretos*/
+#mensagem_erro {
+  background-color: rgba(252, 7, 7, 0.568); /* Fundo semi-transparente */
+  color: white; /* Cor do texto */
+  position: fixed; /* Posição fixa na tela */
+  bottom: 0; /* Alinhamento inferior */
+  left: 50%; /*horizontal */
+  transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
+  padding: 10px; /* Espaçamento interno */
+  width: 300px; /* Largura do alerta */
+  text-align: center; /* Centraliza o texto */
+}
+
 /*fim container login*/
 body {
-    background-image: url(/imagens/fundo-login.jpg);
+  background-image: url(imagens/fundo-login.jpg);
 }
 
 p, td, h1, input {
@@ -60,15 +76,6 @@ table, td, th {
     border: 1px solid black;
 }
 
-.titulo{
-  border: 2px solid #240b06;
-  width: 300px;
-  height: auto;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-}
 h1{
   font-family: "Poppins", sans-serif;
   font-weight: 500;
