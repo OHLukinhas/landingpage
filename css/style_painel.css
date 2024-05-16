@@ -11,16 +11,16 @@
 
 body{
     font-family: 'Poppins';
-    background-image: url(./imagens/fundobranco.png);
+    background-image: url(imagens/fundobranco.png);
     background-repeat: no-repeat;
     background-size: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-   
     
 
 }
+
 
 
 
@@ -34,17 +34,15 @@ body{
     width: 90%;
     height: auto;
     
-}
-
-#botao-salvar{
-    width: 60rem;
-    height: auto;
-    display: flex;
-    justify-content: flex-end
     
 }
 
 
+#botao-salvar{
+    padding: 5px;
+    position: absolute;
+    right: 1%;
+}
 
 .card {
     border-radius: 10px;

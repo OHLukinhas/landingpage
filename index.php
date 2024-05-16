@@ -66,7 +66,7 @@ integrity - gera um chave no site do bootstrap´para carregamento dos arquivos c
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- link do style.css-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     <title>Pagina de Tarefas</title>
 </head>
