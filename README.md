@@ -1,20 +1,18 @@
 Projeto landing page da uniasselvi
 
-//Front End//
-Lucas F.
-Lucas G.
-
- ->Pesonalizar as paginas e simplificar o uso 
- // precisa inserir mais tarefas//
-
-//Back End//
 
 
+
+integrantes 
 André 
 Alison
 João
+Lucas F.
+Lucas G
 
-//        inserir mais tarefas!!                           //
+projeto visa criar um aplicação web, com sistema de todolist(lista de tarefas), com acesso a usuário login e senha .
+
+
 // comandos basicos que devemos inserir//
 SELECT   -  Listar tarefas, selecionar tarefa para editar/remover
 INSERT   - Adicionar uma nova tarefa
@@ -24,14 +22,9 @@ UPDATE  - Alterar uma tarefa
 ------------------------------------------------
 Estamos utilizando o programa XAMPPP
 
-Arquivos a ser salvo no diretorio -> C:\xampp\htdocs
-conexao.php
-index.php
-logout.php
-painel.php
-protect.php
-style.css
-imagens/fundo-login.jpg
+Arquivos devem ser salvos no diretorio -> C:\xampp\htdocs
+
+
 
 Banco de dados para importar no painel phpMyAdmin
 
