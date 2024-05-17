@@ -37,6 +37,10 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             echo '<div class="alert alert-danger" role="alert" id="mensagem_erro">Falha ao logar, e-mail ou senha incorretos! </div>';
         }
         //fim da consulta da query
+        //Uma query é uma solicitação de informações feita a um banco de dados. 
+        //Ela pode ser entendida como uma consulta, uma pergunta ou uma requisição.
+        // Quando executada, uma query retorna informações já armazenadas no banco de dados, 
+        //que podem ser acessadas a qualquer momento se o usuário fizer a pergunta correta. 
     }
 }
 ?>
@@ -66,7 +70,7 @@ integrity - gera um chave no site do bootstrap´para carregamento dos arquivos c
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- link do style.css-->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Pagina de Tarefas</title>
 </head>
@@ -76,21 +80,21 @@ integrity - gera um chave no site do bootstrap´para carregamento dos arquivos c
     <!--Titulo -->
     <h1 class="center">Menu de tarefas</h1>
     <!--inicio Formulario de login-->
-    <tbody>
 
-        <div class="login-container">
-            <h1>Acesse sua conta</h1>
-            <form action="" method="post">
-                <input type="text" id="username" name="email" required placeholder="E-mail" class="form-control">
 
-                <input type="password" id="password" name="senha" required placeholder="Senha" class="form-control">
+    <div class="login-container">
+        <h1>Acesse sua conta</h1>
+        <form action="" method="post">
+            <input type="text" id="username" name="email" required placeholder="E-mail" class="form-control">
 
-                <input type="submit" value="Entrar">
-                <!--fim do formulario de login-->
+            <input type="password" id="password" name="senha" required placeholder="Senha" class="form-control">
 
-    </tbody>
-    </table>
+            <input type="submit" value="Entrar">
+            <!--fim do formulario de login-->
+        </form>
     </div>
+
+
     <!--link do  bootstrap (pagina responsiva)-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
