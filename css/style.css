@@ -1,0 +1,90 @@
+body {
+    font-family: 'Geneva';
+    font-style: normal;
+  }
+  /* inicio container de login*/
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 3px solid #240b06;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(16,120,129,1) 45%, rgba(253,187,45,1) 91%);
+
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #3f423f;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  input[type="submit"]:hover {
+    background-color: #084647;
+    transition: 1s;
+  }
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+/*mensagem de erro ao logar o usuario e senha incorretos*/
+#mensagem_erro {
+  background-color: rgba(252, 7, 7, 0.568); /* Fundo semi-transparente */
+  color: white; /* Cor do texto */
+  position: fixed; /* Posição fixa na tela */
+  bottom: 0; /* Alinhamento inferior */
+  left: 50%; /*horizontal */
+  transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
+  padding: 10px; /* Espaçamento interno */
+  width: 300px; /* Largura do alerta */
+  text-align: center; /* Centraliza o texto */
+}
+
+/*fim container login*/
+body {
+  background-image: url(imagens/fundo-login.jpg);
+}
+
+p, td, h1, input {
+    font-family: 'Geneva';
+}
+
+input {
+    background-color: #f6f8e9;
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+
+}
