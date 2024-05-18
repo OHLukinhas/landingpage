@@ -18,6 +18,7 @@
   }
 
 body{
+    max-width: 100%;
     font-family: 'Poppins';
     background-image: url(/imagens/fundobranco.png);
     background-repeat: no-repeat;
