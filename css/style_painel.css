@@ -19,7 +19,7 @@
 
 body{
     font-family: 'Poppins';
-    background-image: url(./imagens/fundobranco.png);
+    background-image: url(/imagens/fundobranco.png);
     background-repeat: no-repeat;
     background-size: auto;
     display: flex;
@@ -34,48 +34,119 @@ body{
 
 #container{
     display: flex;
+    position: relative;
     flex-direction: column;
     margin-top: 10%;
     justify-content: center;
     align-items: center;
-    max-width: 60;
+    max-width: 100%;
     width: 90%;
     height: auto;
-    border: solid red;
     
 }
 
 #botao-salvar{
-    width: 60rem;
+    width: 90%;
     height: auto;
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    position: relative;
     
 }
 
 
 
 .card {
+    max-width: 100%;
     border-radius: 10px;
     text-align: center;
 }
 .card p {
+    max-width: 100%;
     font-size: 0.9rem;
     color: #555;
+    
+}
+
+.card-header {
+    max-width: 100%;
 }
 
 #caixa-formulario {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: auto;
     text-align: justify;
     padding: 8px;
 }
-
-
-#tabelas {
-    border: 1px solid black;
+#botao-salvar{
+    display: flex;
+    position: relative;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%,-1%);
 }
+
+/* tabelas*/
+
+#cartao-tabelas {
+    display: flex;
+    position: relative;
+    left: auto;
+    top: 5%;
+    padding: 5px;
+
+    
+}
+
+
+
+select {
+    width: auto;
+    height: 25px;
+    font-size: 15px;
+    background: #f2f2f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1px;
+}
+selected {
+    background-color: #00000a;
+    border-radius: 5px;
+    
+}
+
+table {
+    display: flex;
+    border-collapse: solid;
+    border-spacing: 2px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    
+ 
+}
+
+th, td {
+    width: auto;
+    border:  1px solid #030303;
+    padding: 1px;
+    text-align: center;
+    
+    
+    
+}
+
+td {
+    background-color: #ffffff; /*dados do corpo da tabela*/
+    column-width: 300px;
+    }
+
+tr {
+    background-color: #ada8a8cc; /* celula de cabeçalho*/
+}
+
+
 
 
   

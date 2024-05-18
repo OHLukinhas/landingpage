@@ -1,6 +1,7 @@
 body {
     font-family: 'Geneva';
     font-style: normal;
+    background-image: url(/imagens/fundo-login.jpg );
   }
   /* inicio container de login*/
   .login-container {
@@ -55,9 +56,6 @@ body {
 }
 
 /*fim container login*/
-body {
-  background-image: url(/imagens/fundo-login.jpg);
-}
 
 p, td, h1, input {
     font-family: 'Geneva';

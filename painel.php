@@ -68,7 +68,7 @@
     <div id="container"> <!--Inicio container--->
         <!--inicio cartao Nova Tarefa--->
         <div class="card">
-            <div class="card-header" style="width: 60rem;">
+            <div class="card-header" style="width: 80rem;">
                 <div class="col-md-3">
                     <img src="./imagens/nova-tarefa1.png">
                     Nova tarefa
@@ -83,93 +83,138 @@
                         <label class="form-label">Titulo</label>
                         <input type="text" class="form-control" placeholder="Digite aqui o titulo">
                     </div>
-                    <div class="mb-5">
+                    <div class="mb-3">
                         <label class="form-label">Descrição</label>
                         <textarea class="form-control" rows="3" placeholder="Descrição"></textarea>
-                        <div class="mb-5" id="botao-salvar">
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button onclick="newTask()" type="button" class="btn btn-outline-success" title="Clique aqui para adicionar uma nova tarefa">Salvar</button>
-                            </div>
-                        </div>
+
+
+                    </div>
+                    <div id="botao-salvar">
+
+                        <button onclick="newTask()" type="button" class="btn btn-outline-success" title="Clique aqui para adicionar uma nova tarefa">Salvar</button>
+
                     </div>
                 </div>
 
             </div><!--Fim titulo e descrição-->
 
 
-            <div class="container-fluid"><!---Inicio colunas e tabelas--->
+            <div id="cartao-tabelas" class="container"><!---Inicio colunas e tabelas--->
                 <div class="list-group">
-                    <table id="tabelas">
+                    <table>
                         <tr>
                             <th>Tarefa</th>
                             <th>Data Inclusão</th>
                             <th>Status</th>
                             <th>Ações</th>
                         </tr>
+                        <div id="tabelas" class="sticky-md-top">
+                            <tr>
+                                <td>Correr no parque, 3km sem chinelo
 
-                        <tr>
-                            <td>Teste</td>
-                            <td>16/05/2024</td>
-                            <td>
-                                <select>
-                                    <option selected>Selecione uma das opções</option>
-                                    <option value="1">Concluida</option>
-                                    <option value="2">Em andamento</option>
-                                    <option value="3">Pendente</option>
-                                </select>
-                            </td>
-                            <td>
-                                <button class="btn" title="Clique aqui para editar a tarefa">
-                                    <img src="imagens/botao-editar.png">
-                                </button>
-                                <button class="btn" title="Clique aqui para excluir a tarefa">
-                                    <img src="imagens/excluir.png">
-                                </button>
-                            </td>
+                                </td>
+                                <td>16/05/2024</td>
+                                <td>
+                                    <select>
+                                        <option selected>Selecione uma das opções</option>
+                                        <option value="1">Concluida</option>
+                                        <option value="2">Em andamento</option>
+                                        <option value="3">Pendente</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn" title="Clique aqui para editar a tarefa">
+                                        <img src="imagens/botao-editar.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para excluir a tarefa">
+                                        <img src="imagens/excluir.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para finalizar a tarefa">
+                                        <img src="imagens/tarefa-concluida.png">
+                                    </button>
+                                </td>
 
-                        </tr>
-                        <tr>
-                            <td>Teste</td>
-                            <td>16/05/2024</td>
-                            <td>
-                                <select>
-                                    <option selected>Selecione uma das opções</option>
-                                    <option value="1">Concluida</option>
-                                    <option value="2">Em andamento</option>
-                                    <option value="3">Pendente</option>
-                                </select>
-                            </td>
-                            <td>
-                                <button class="btn" title="Clique aqui para editar a tarefa">
-                                    <img src="imagens/botao-editar.png">
-                                </button>
-                                <button class="btn" title="Clique aqui para excluir a tarefa">
-                                    <img src="imagens/excluir.png">
-                                </button>
-                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fazer 850 polichinelos na ponta de um penhasco
+                                </td>
+                                <td>16/05/2024</td>
+                                <td>
+                                    <select>
+                                        <option selected>Selecione uma das opções</option>
+                                        <option value="1">Concluida</option>
+                                        <option value="2">Em andamento</option>
+                                        <option value="3">Pendente</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn" title="Clique aqui para editar a tarefa">
+                                        <img src="imagens/botao-editar.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para excluir a tarefa">
+                                        <img src="imagens/excluir.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para finalizar a tarefa">
+                                        <img src="imagens/tarefa-concluida.png">
+                                    </button>
+                                </td>
 
-                        </tr>
-                        <tr>
-                            <td>Teste</td>
-                            <td>16/05/2024</td>
-                            <td>
-                                <select>
-                                    <option selected>Selecione uma das opções</option>
-                                    <option value="1">Concluida</option>
-                                    <option value="2">Em andamento</option>
-                                    <option value="3">Pendente</option>
-                                </select>
-                            </td>
-                            <td>
-                                <button class="btn" title="Clique aqui para editar a tarefa">
-                                    <img src="imagens/botao-editar.png">
-                                </button>
-                                <button class="btn" title="Clique aqui para excluir a tarefa">
-                                    <img src="imagens/excluir.png">
-                                </button>
-                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Passear com o Dog por 10hrs
+                                </td>
+                                <td>16/05/2024</td>
+                                <td>
+                                    <select>
+                                        <option selected>Selecione uma das opções</option>
+                                        <option value="1">Concluida</option>
+                                        <option value="2">Em andamento</option>
+                                        <option value="3">Pendente</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn" title="Clique aqui para editar a tarefa">
+                                        <img src="imagens/botao-editar.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para excluir a tarefa">
+                                        <img src="imagens/excluir.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para finalizar a tarefa">
+                                        <img src="imagens/tarefa-concluida.png">
+                                    </button>
+                                </td>
 
-                        </tr>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Jogar Cod por 2 semanas direto sem parar
+                                </td>
+                                <td>16/05/2024</td>
+                                <td>
+                                    <select>
+                                        <option selected>Selecione uma das opções</option>
+                                        <option value="1">Concluida</option>
+                                        <option value="2">Em andamento</option>
+                                        <option value="3">Pendente</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn" title="Clique aqui para editar a tarefa">
+                                        <img src="imagens/botao-editar.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para excluir a tarefa">
+                                        <img src="imagens/excluir.png">
+                                    </button>
+                                    <button class="btn" title="Clique aqui para finalizar a tarefa">
+                                        <img src="imagens/tarefa-concluida.png">
+                                    </button>
+                                </td>
+
+                            </tr>
+                        </div>
+
 
                     </table>
 
