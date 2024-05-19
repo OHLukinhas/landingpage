@@ -1,7 +1,7 @@
 body {
     font-family: 'Geneva';
     font-style: normal;
-    background-image: url(/imagens/fundo-login.jpg);
+    background-image: url(../imagens/fundo-login.jpg);
   }
   /* inicio container de login*/
   .login-container {
