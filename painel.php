@@ -4,10 +4,7 @@
 
 <head>
 
-    <?php echo $_SESSION['nome']; ?>
-    <!-- $_SESSION =  usado para armazenar informações temporárias,
-     como dados do usuário, preferências, autenticação e outros estados relevantes, 
-     podendo ser usada uma variavel de SESSION em todas as paginas -->
+    <!-- $_SESSION=usado para armazenar informações temporárias, como dados do usuário, preferências, autenticação e outros estados relevantes, podendo ser usada uma variavel de SESSION em todas as paginas -->
     <!------------------------------------------------------------------------------------------------------->
     <meta charset="utf-8">
     <!--link do  bootstrap (pagina responsiva)-->
@@ -49,20 +46,31 @@
     <div>
         <nav class="navbar bg-dark fixed-top bg-body-tertiary " data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand">
-                    <img src="./imagens/tarefa.png">
-                    Bem vindo ao menu de tarefas!
-                </a>
+                <div>
+                    <a class="navbar-brand">
+                        <img src="./imagens/tarefa.png">
+                        Menu de tarefas
+                    </a>
+                </div>
+
 
                 <div>
-                    <a href="index.php">
-                        <button type="button" class="btn btn-danger">Sair</button>
+
+                    <a class="navbar-brand">
+                        Bem vindo
+                        <?php echo $_SESSION['nome']; ?> <!--Aqui via informar o nome do usuario na tela--->
                     </a>
+
+                    <a href="index.php">
+                        <img src="imagens/exit.png">
+                    </a>
+
                 </div>
             </div>
         </nav>
     </div>
     <!---fim Navbar painel--->
+
 
     <!--- inicio de tarefas --->
     <div id="container"> <!--Inicio container--->
@@ -109,6 +117,7 @@
                             <th>Ações</th>
                         </tr>
                         <div id="tabelas" class="sticky-md-top">
+
                             <tr>
                                 <td>Correr no parque, 3km sem chinelo
 
@@ -135,6 +144,7 @@
                                 </td>
 
                             </tr>
+                            </a>
                             <tr>
                                 <td>
                                     Fazer 850 polichinelos na ponta de um penhasco

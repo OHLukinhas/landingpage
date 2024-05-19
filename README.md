@@ -29,3 +29,8 @@ Arquivos devem ser salvos no diretorio -> C:\xampp\htdocs
 Banco de dados para importar no painel phpMyAdmin
 
 PhpMyAdmin/usuario.sql
+
+Fontes :
+Icones : https://www.flaticon.com/br/buscar?word=sair
+Framework utilizado: https://getbootstrap.com/docs/5.3/layout/containers/
+Sistema de Login em PHP : https://www.youtube.com/watch?v=30Of7BFeGHI

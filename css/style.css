@@ -1,7 +1,7 @@
 body {
     font-family: 'Geneva';
     font-style: normal;
-    background-image: url(/imagens/fundo-login.jpg );
+    background-image: url(/imagens/fundo-login.jpg);
   }
   /* inicio container de login*/
   .login-container {
@@ -49,7 +49,7 @@ body {
   position: fixed; /* Posição fixa na tela */
   bottom: 0; /* Alinhamento inferior */
   left: 50%; /*horizontal */
-  transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
+  transform: translateX(-50%); 
   padding: 10px; /* Espaçamento interno */
   width: 300px; /* Largura do alerta */
   text-align: center; /* Centraliza o texto */

@@ -79,27 +79,30 @@ integrity - gera um chave no site do bootstrap´para carregamento dos arquivos c
 
     <!--Titulo -->
     <h1 class="center">Menu de tarefas</h1>
+
     <!--inicio Formulario de login-->
 
+    <table>
+        <tbody>
+            <div class="login-container">
+                <h1>Acesse sua conta</h1>
+                <form action="" method="post">
+                    <input type="text" id="username" name="email" required placeholder="E-mail" class="form-control">
 
-    <div class="login-container">
-        <h1>Acesse sua conta</h1>
-        <form action="" method="post">
-            <input type="text" id="username" name="email" required placeholder="E-mail" class="form-control">
+                    <input type="password" id="password" name="senha" required placeholder="Senha" class="form-control">
 
-            <input type="password" id="password" name="senha" required placeholder="Senha" class="form-control">
+                    <input type="submit" value="Entrar">
+                    <!--fim do formulario de login-->
+                </form>
+            </div>
+        </tbody>
+    </table>
 
-            <input type="submit" value="Entrar">
-            <!--fim do formulario de login-->
-        </form>
-    </div>
 
 
     <!--link do  bootstrap (pagina responsiva)-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

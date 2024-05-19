@@ -31,7 +31,25 @@ body{
 
 }
 
+#logo-texto {
+    color: white;
+    text-align: left;
 
+}
+
+
+#usuario {
+    display: flex;
+    align-items: center;
+}
+
+#menu-tarefas {
+    display: flex;
+    max-width: 100%;
+    text-align: center;
+    width: 50%;
+   
+}
 
 #container{
     display: flex;
