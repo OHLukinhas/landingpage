@@ -19,16 +19,12 @@
 
 body{
     max-width: 100%;
-    font-family: 'Poppins';
     background-image: url(/imagens/fundobranco.png);
     background-repeat: no-repeat;
     background-size: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
-
 }
 
 #logo-texto {
@@ -121,7 +117,7 @@ body{
 
 
 
-select {
+.select {
     width: auto;
     height: 25px;
     font-size: 15px;
@@ -130,20 +126,16 @@ select {
     border-radius: 5px;
     padding: 1px;
 }
-selected {
-    background-color: #00000a;
+.selected {
+    background-color: #0d0e0d;
     border-radius: 5px;
     
 }
 
 table {
     display: flex;
-    border-collapse: solid;
     border-spacing: 2px;
     width: 100%;
-    font-family: Arial, sans-serif;
-    
- 
 }
 
 th, td {
@@ -165,7 +157,6 @@ tr {
     background-color: #ada8a8cc; /* celula de cabeçalho*/
 }
 
-
-
-
-  
+.col-md-3{
+    cursor: default;
+}  
