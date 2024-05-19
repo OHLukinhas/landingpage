@@ -1,5 +1,6 @@
 Projeto landing page da uniasselvi
 
+![image](https://github.com/AlisonR97/landingpage/assets/144969577/848e48c4-5d93-4af2-95a3-6af822eadcc6)
 
 
 
