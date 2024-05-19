@@ -85,25 +85,25 @@
             </div>
             <!--inicio titulo e descrição-->
             <div class="container-fluid">
-
+            <form id="newTaskForm">
                 <div class="form-group" id="caixa-formulario">
                     <div class="col-mb3">
-                        <label class="form-label">Titulo</label>
-                        <input type="text" class="form-control" placeholder="Digite aqui o titulo">
+                        <label for="taskTitle" class="form-label">Titulo</label>
+                        <input type="text" class="form-control" id="taskTitle" placeholder="Digite aqui o titulo">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Descrição</label>
-                        <textarea class="form-control" rows="3" placeholder="Descrição"></textarea>
+                        <label for="taskDescription" class="form-label">Descrição</label>
+                        <textarea id="taskDescription" class="form-control" rows="3" placeholder="Descrição"></textarea>
 
 
                     </div>
                     <div id="botao-salvar">
 
-                        <button onclick="newTask()" type="button" class="btn btn-outline-success" title="Clique aqui para adicionar uma nova tarefa">Salvar</button>
+                        <button onclick="newTask()" type="submit" class="btn btn-primary" title="Clique aqui para adicionar uma nova tarefa">Salvar</button>
 
                     </div>
                 </div>
-
+            </form>
             </div><!--Fim titulo e descrição-->
 
 
@@ -111,6 +111,7 @@
                 <div class="list-group">
                     <table>
                         <tr>
+                            <th>Título</th>
                             <th>Tarefa</th>
                             <th>Data Inclusão</th>
                             <th>Status</th>
@@ -119,8 +120,8 @@
                         <div id="tabelas" class="sticky-md-top">
 
                             <tr>
+                                <td>Teste</td>
                                 <td>Correr no parque, 3km sem chinelo
-
                                 </td>
                                 <td>16/05/2024</td>
                                 <td>
@@ -132,96 +133,16 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <button class="btn" title="Clique aqui para editar a tarefa">
+                                    <button class="btn btn-warning" onclick="editTask(this)" title="Clique aqui para editar a tarefa">
                                         <img src="imagens/botao-editar.png">
                                     </button>
-                                    <button class="btn" title="Clique aqui para excluir a tarefa">
+                                    <button class="btn" onclick="removeTask(this)" title="Clique aqui para excluir a tarefa">
                                         <img src="imagens/excluir.png">
                                     </button>
                                     <button class="btn" title="Clique aqui para finalizar a tarefa">
                                         <img src="imagens/tarefa-concluida.png">
                                     </button>
                                 </td>
-
-                            </tr>
-                            </a>
-                            <tr>
-                                <td>
-                                    Fazer 850 polichinelos na ponta de um penhasco
-                                </td>
-                                <td>16/05/2024</td>
-                                <td>
-                                    <select>
-                                        <option selected>Selecione uma das opções</option>
-                                        <option value="1">Concluida</option>
-                                        <option value="2">Em andamento</option>
-                                        <option value="3">Pendente</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <button class="btn" title="Clique aqui para editar a tarefa">
-                                        <img src="imagens/botao-editar.png">
-                                    </button>
-                                    <button class="btn" title="Clique aqui para excluir a tarefa">
-                                        <img src="imagens/excluir.png">
-                                    </button>
-                                    <button class="btn" title="Clique aqui para finalizar a tarefa">
-                                        <img src="imagens/tarefa-concluida.png">
-                                    </button>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>
-                                    Passear com o Dog por 10hrs
-                                </td>
-                                <td>16/05/2024</td>
-                                <td>
-                                    <select>
-                                        <option selected>Selecione uma das opções</option>
-                                        <option value="1">Concluida</option>
-                                        <option value="2">Em andamento</option>
-                                        <option value="3">Pendente</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <button class="btn" title="Clique aqui para editar a tarefa">
-                                        <img src="imagens/botao-editar.png">
-                                    </button>
-                                    <button class="btn" title="Clique aqui para excluir a tarefa">
-                                        <img src="imagens/excluir.png">
-                                    </button>
-                                    <button class="btn" title="Clique aqui para finalizar a tarefa">
-                                        <img src="imagens/tarefa-concluida.png">
-                                    </button>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>
-                                    Jogar Cod por 2 semanas direto sem parar
-                                </td>
-                                <td>16/05/2024</td>
-                                <td>
-                                    <select>
-                                        <option selected>Selecione uma das opções</option>
-                                        <option value="1">Concluida</option>
-                                        <option value="2">Em andamento</option>
-                                        <option value="3">Pendente</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <button class="btn" title="Clique aqui para editar a tarefa">
-                                        <img src="imagens/botao-editar.png">
-                                    </button>
-                                    <button class="btn" title="Clique aqui para excluir a tarefa">
-                                        <img src="imagens/excluir.png">
-                                    </button>
-                                    <button class="btn" title="Clique aqui para finalizar a tarefa">
-                                        <img src="imagens/tarefa-concluida.png">
-                                    </button>
-                                </td>
-
                             </tr>
                         </div>
 
@@ -237,7 +158,7 @@
 
 
     </div><!--fim container--->
-
+    <script src="script.js"></script>
 </body>
 
 </html>
