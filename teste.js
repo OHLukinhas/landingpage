@@ -15,9 +15,9 @@ function loadTasks() {
             <td>${task.date}</td>
             <td>
                 <select>
-                    <option value="1" ${task.status === '3' ? 'selected' : ''}>Concluída</option>
+                    <option value="1" ${task.status === '1' ? 'selected' : ''}>Concluída</option>
                     <option value="2" ${task.status === '2' ? 'selected' : ''}>Em andamento</option>
-                    <option value="3" ${task.status === '1' ? 'selected' : ''}>Pendente</option>
+                    <option value="3" ${task.status === '3' ? 'selected' : ''}>Pendente</option>
                 </select>
             </td>
             <td>
@@ -45,6 +45,13 @@ function newTask() {
 
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
+    // Verificação de título existente
+    const taskExists = tasks.some(task => task.title === titulo);
+    if (taskExists) {
+        alert('Uma tarefa com este título já existe.');
+        return;
+    }
+
     const date = new Date();
     const formattedDate = date.toLocaleDateString('pt-BR');
 
@@ -52,7 +59,7 @@ function newTask() {
         title: titulo,
         description: descricao,
         date: formattedDate,
-        status: '1' // Pendente
+        status: '3' // Pendente
     };
 
     tasks.push(newTask);
@@ -67,9 +74,9 @@ function newTask() {
         <td>${formattedDate}</td>
         <td>
             <select>
-            <option value="1">Concluída</option>
-            <option value="2">Em andamento</option>
-            <option value="3" selected>Pendente</option>
+                <option value="1">Concluída</option>
+                <option value="2">Em andamento</option>
+                <option value="3" selected>Pendente</option>
             </select>
         </td>
         <td>
@@ -92,12 +99,19 @@ function deleteTask(button) {
     const row = button.parentNode.parentNode;
     const title = row.cells[0].innerText;
 
-    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-    tasks = tasks.filter(task => task.title !== title);
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    try {
+        let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        
+        tasks = tasks.filter(task => task.title.toLowerCase() !== title.toLowerCase());
 
-    row.parentNode.removeChild(row);
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+
+        row.parentNode.removeChild(row);
+    } catch (error) {
+        console.error('Error removing task:', error);
+    }
 }
+
 
 function editTask(button) {
     const row = button.parentNode.parentNode;
