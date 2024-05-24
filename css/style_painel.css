@@ -31,7 +31,6 @@ body{
     border-radius: 10px;
     margin-top: 5rem;
     height: auto;
-    align-content: center;
 }
 .card p {
     max-width: 100%;
@@ -75,12 +74,11 @@ select:hover {
 }
 
 table {
-    display: flex;
     border-spacing: 2px;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
     padding: 10px;
+    border-collapse: separate;
 }
 
 th, td {
@@ -99,9 +97,11 @@ td {
     cursor: default;
 }  
 
-.cabecalho{
-    width: 100%;
-    background-color: #ada8a8cc;
-    
 
+tr.cabecalho{
+    width: 100%;
+
+}
+#taskTableBody{
+    text-transform: capitalize;
 }
