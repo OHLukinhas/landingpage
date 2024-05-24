@@ -85,15 +85,20 @@
                         <button onclick="newTask()" type="button" class="btn btn-outline-success" title="Clique aqui para adicionar uma nova tarefa">Salvar</button>
                     </div>
                     <div class="list-group" id="tabelas">
-    <table class="table">
-        
-        <tbody id="taskTableBody">
-            <tr> 
-                
-            </tr>
-        </tbody>
-    </table>
-</div><!---Fim colunas e tabelas--->
+                        <table class="table">
+                            <tbody id="taskTableBody">
+                                <tr class="cabecalho">
+                                    <th>Título</th>
+                                    <th>Descrição</th>
+                                    <th>Data</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                                <tr> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        </div><!---Fim colunas e tabelas--->
  <script src="teste.js"></script>
 </body>
 
