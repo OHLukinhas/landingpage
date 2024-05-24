@@ -15,7 +15,10 @@ body {
     font-style: normal;
     background: rgb(34,193,195);
     background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(16,120,129,1) 45%, rgba(253,187,45,1) 91%);
+<<<<<<< HEAD:css/style.css
 
+=======
+>>>>>>> 90b6cc59376b8d8fe946a9148d53eb4e82f306f4:style.css
   }
   input[type="text"], input[type="password"] {
     width: 100%;
@@ -56,6 +59,12 @@ body {
 }
 
 /*fim container login*/
+<<<<<<< HEAD:css/style.css
+=======
+body {
+  background-image: url(./img/fundo-login.jpg);
+}
+>>>>>>> 90b6cc59376b8d8fe946a9148d53eb4e82f306f4:style.css
 
 p, td, h1, input {
     font-family: 'Geneva';

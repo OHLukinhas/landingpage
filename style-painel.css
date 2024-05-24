@@ -1,0 +1,127 @@
+:root{
+    --color-green: rgb(69,245,6);
+    --color-green2: #075e65;
+    --color-green3: rgb(20, 164, 123);
+    --color-white: #fff;
+    --color-gray: rgb(220,220,220);
+
+
+}
+body{
+    font-family: 'Poppins';
+    background-image: url(./img/fundobranco.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    font-style: oblique ;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;    
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    margin-top: 20%;
+}
+
+#new-item{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 2rem;
+    padding-left: 20%;
+}
+
+#add-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    align-items: center;
+}
+
+#add-new-item{
+    border: none;
+    border-radius: 1rem;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+#btn-new-item{
+    background-color: var(--color-green3);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.6s;
+    border: none;
+    font-size: 20px;
+}
+
+#btn-new-item:hover{
+    background-color: var(--color-green2);
+}
+
+#content-itens{
+    display: flex;
+    text-align: start;
+    gap: 2rem;
+    padding: 0;
+    color: var(--color-white);
+    flex-direction: column-reverse;
+}
+
+#content-itens, 
+#itens
+li {
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    cursor: default;
+    gap: 3rem;
+}
+
+#content-itens li:hover{
+    background-color: var(--color-green2);
+    transition: 0.6s;
+    width: 300px;
+    border-radius: 1rem;
+    padding-left: 1rem;
+
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--color-green2);
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: var(--color-green3);}
